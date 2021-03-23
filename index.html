@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <meta name="apple-mobile-web-app-title" content="Sneakypeer">
@@ -33,34 +34,64 @@
     <meta property="twitter:image" content="./logo.png">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link href="./app.css" rel="stylesheet">
 
-<body data-new-gr-c-s-check-loaded="14.997.0" data-gr-ext-installed="">
+<body>
 
-    <div class="container">
-        <img src="./logo.png" alt="Sneakypeer logo" class="py-2">
-        <div class="row justify-content-center py-5">
-            <div class="col-md-6">
-                <img src="./undrmntnc.svg" alt="Maintenance mode" class="w-100 mb-4 img-center">
-            </div>
-            <div class="col-md-12 text-center">
-                <div class="display-3 text-primary"><b>Unexpected issue</b></div>
-                <hr class="w-25">
-                <p>We just wanted to let you know that the Sneakypeer website will temporarily be down.</p>
-                <p class="py-3">Due to a fire that occurred last Wednesday morning at the OVH Strasbourg Data Center, servers that contained Sneakypeer data have been destroyed.</p>
-                <p>We expect our website to be up and running again within a week. In case of any questions please contact Sneakypeer at <a href="mailto:hello@sneakypeer.com">hello@sneakypeer.com</a></p>
-                <div style="display: none">::ALWAYS_ONLINE_NO_COPY_BOX::</div>
+<div class="container">
+    <img src="./logo.png" alt="Sneakypeer logo" class="py-2" style="width: 120px">
+    <div class="row justify-content-center">
+        <div class="col-md-10 text-center">
+            <div class="fh-48 lh-1 text-primary mb-4"><b>Thanks for coming by!</b></div>
+            <p class="fh-18">We are busy upgrading Sneakypeer website with new features to keep your investments safe with improved Sneakypeer Scoring logic and new “Monitoring” feature.</p>
+        </div>
+        <div class="col-md-7 mx-2 mx-sm-5 mx-md-0">
+            <div class="px-5 py-4 text-center d-flex-center">
+                <img src="./desktop.png" alt="Desktop feature" class="d-none d-md-block w-100">
+                <img src="./mobile.png" alt="Mobile feature" class="d-md-none w-100">
             </div>
         </div>
+        <div class="col-12 text-center mb-3">
+            <b class="fh-20 text-dark">Leave your e-mail to be notified once we go live</b>
+        </div>
+        <div class="col-md-6 mx-5 mx-md-0">
+            <form name="subscribe" class="subscribe" action="https://list.mailigen.com/subscribe/post" method="post">
+                <input type="hidden" name="subscribe" value="true">
+                <input type="hidden" name="ln" value="en">
+                <input type="hidden" name="u" value="b3acc4de682c5bac55c56a8c445fa439">
+                <input type="hidden" name="id" value="60d5f610">
+
+                <div class="d-flex-center flex-column align-items-stretch flex-md-row form-group">
+                    <input type="email" required minlength="3" class="text form-control border-default flex-grow-1" name="merge[0]" placeholder="E-mail" accept="email" value="">
+                    <button id="formSubmit" class="btn btn-primary mt-3 mt-md-0 flex-grow-1 ml-md-3" name="submit" type="submit">Subscribe</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-7 text-center">
+            <p>In case of any questions please contact Sneakypeer at <a href="mailto:hello@sneakypeer.com">hello@sneakypeer.com</a></p>
+        </div>
     </div>
+</div>
 
 
 <!-- Scripts -->
+<script type="text/javascript">
+    if (typeof jQuery == 'undefined') {
+        document.write('<scr' + 'ipt type="text/javascript" src="https://list.mailigen.com/js/jquery.js"></scr' + 'ipt>');
+    }
+</script>
+<script language="javascript" type="text/javascript" src="https://list.mailigen.com/js/scripts.js"></script>
+<script language="javascript" type="text/javascript" src="https://list.mailigen.com/js/subscribe3.0.js"></script>
+<script language="javascript" type="text/javascript">
+    jQuery(function () {
+        jQuery('.MG-placeholder-1616508377299').MGsubscribe({
+            type: 'inline'
+        });
+    });
+</script>
 <script src="./app.js"></script>
-</body></html>
+</body>
+</html>
